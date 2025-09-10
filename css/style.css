@@ -200,6 +200,7 @@ a {
   text-align: center;
   border: none;
   border-radius: 40px;
+  outline: 0;
   padding: 2rem 3rem;
   margin: 1rem 0;
   cursor: pointer;
@@ -209,6 +210,13 @@ a {
 .btn--primary {
   background: var(--color-primary);
   color: #fff;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary:hover {
@@ -283,7 +291,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -695,4 +703,30 @@ a {
     text-align: left;
     align-self: center;
   }
+}
+
+/* Domain Block*/
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  max-width: 670px;
+  margin: 4rem auto;
+}
+
+.block-domail__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domail__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
 }
