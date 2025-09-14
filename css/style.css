@@ -207,7 +207,7 @@ a {
   border: none;
   border-radius: 40px;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   margin: 1rem 0;
   cursor: pointer;
   white-space: nowrap;
@@ -271,6 +271,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -298,6 +299,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -343,6 +345,7 @@ a {
 /* Plans ++++++++++++++++++++++++++++++++++*/
 .plan {
   transition: transform .2s ease-out;
+  margin: 1rem 0;
 }
 
 .plan__name {
@@ -456,7 +459,7 @@ a {
   margin-bottom: 0;
 }
 
-.quote__organiz {
+.quote__organization {
   color: var(--color-headings);
   opacity: 0.4;
   font-size: 2rem;
@@ -477,7 +480,7 @@ a {
     font-size: 2.4rem;
   }
 
-  .quote__organiz {
+  .quote__organization {
     font-size: 1.6rem;
   }
 }
@@ -533,7 +536,7 @@ a {
 
 /* Callouts ++++++++++++++++++++++++++++++++*/
 .callout {
-  padding: 4rem;
+  padding: 2rem 4rem;
   border-radius: 5px;
 }
 
@@ -606,7 +609,7 @@ a {
 
 /* Blocks*/
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 2rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -632,7 +635,7 @@ a {
 
 .block--skewed--right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 
 .block--skewed--left {
@@ -643,6 +646,11 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.container2 {
+  max-width: 1140px;
+  margin: 0 10%;
 }
 
 /* Navigation Bar*/
@@ -740,6 +748,7 @@ a {
 }
 
 .block-domail__prices {
+  color: var(--color-headings);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -750,9 +759,17 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 450px) {
+  .block-domail__prices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .block-domail__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: 6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -769,7 +786,7 @@ a {
 /* Features +++++++++++++++++++++++++++++*/
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem 0;
+  margin: 10rem 0;
 }
 
 .feature:first-of-type {
@@ -795,11 +812,11 @@ a {
   }
 
   .block-showcase__image {
-    justify-self: end;
+    justify-self: center;
   }
 
   .block-showcase__image>img {
-    width: auto;
+    /* width: auto; */
     max-width: 700px;
   }
 }
@@ -807,6 +824,7 @@ a {
 /* Footer*/
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -880,4 +898,24 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+#features__start {
+  margin-top: 3rem;
+  font-weight: 900;
+}
+
+#feature__end {
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #features__start {
+    margin-top: 10rem;
+  }
+}
+
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(7rem);
 }
