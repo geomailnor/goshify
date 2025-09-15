@@ -9,13 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="icon" href="data:,">
 </head>
 
 <body>
   <header>
     <nav class="nav collapsible">
-      <a class="nav__brand" href="/"><img src="images/logo.png" alt=""></a>
+      <a class="nav__brand" href="/"><img src="images/logog.png" alt=""></a>
       <svg class="icon icon--white nav__toggler">
         <use xlink:href="images/sprite.svg#menu"></use>
       </svg>
@@ -30,7 +31,7 @@
   <section class="block block--dark block--skewed--left hero">
     <div class="container grid grid--1x2">
       <header class=" block__header hero__content">
-        <h1 class="block__heading">Cloud Hosting for Pros</h1>
+        <h1 data-aos="flip-left" data-aos-duration="3000" class="block__heading">Cloud Hosting for Pros</h1>
         <p class="hero__tagline">Deploy your website in less than 60 seconds.</p>
         <a href="" class="btn btn--accent btn--stretched">Get Started</a>
       </header>
@@ -42,7 +43,7 @@
     </div>
   </section>
 
-  <section class="block container block-domain">
+  <section data-aos="fade-up" data-aos-duration="1000" class="block container block-domain">
     <header class="block__header">
       <h2>Starting at $9 per month</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
@@ -63,7 +64,7 @@
     </ul>
   </section>
   <!-- block -->
-  <section class="block container block-plans">
+  <section data-aos="fade-up" class="block container block-plans">
     <div class="grid grid--1x3">
       <div class="plan">
         <div class="card card--secondary">
@@ -135,7 +136,7 @@
       <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
     </header>
     <article class="grid grid--1x2 feature">
-      <div>
+      <div data-aos="fade-right">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#easy"></use>
@@ -146,7 +147,7 @@
           veritatis quas atque at.</p>
         <a href="#" class="link-arrow">Learn More</a>
       </div>
-      <picture>
+      <picture data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/easy.webp 1x, images/easy2x.webp 2x">
         <source type="image/png" srcset="images/easy.png 1x, images/easy2x.png 2x">
         <img class="feature__image" src="images/easy2x.png" alt="">
@@ -268,6 +269,7 @@
                   suscipit
                   tenetur at commodi quidem distinctio.</p>
               </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -335,12 +337,12 @@
   <footer class="block block--dark footer">
     <div class="container grid footer__sections">
       <section class="collapsible collapsible--expanded footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">products</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Website Hosting</a></li>
@@ -352,13 +354,13 @@
         </div>
       </section>
       <section class="collapsible footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">company</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
 
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">About</a></li>
@@ -370,13 +372,13 @@
         </div>
       </section>
       <section class="collapsible footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">support</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
 
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Contact</a></li>
@@ -389,13 +391,13 @@
         </div>
       </section>
       <section class="collapsible footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">domains</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
 
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Domain Checker</a></li>
@@ -406,14 +408,18 @@
           </ul>
         </div>
       </section>
-      <section class="footer__brand">
+      <div class="footer__brand">
         <img class="logo__brand" src="images/logog.svg" alt="">
         <p class="footer__copyright">Copyright 2025 Georgi Georgiev</p>
-      </section>
+      </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

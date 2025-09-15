@@ -159,7 +159,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .list--tick .list-item {
     padding-left: 0;
   }
