@@ -660,7 +660,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .nav__list {
