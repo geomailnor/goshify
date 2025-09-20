@@ -8,7 +8,6 @@
   <title>Goshify - go Online</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="icon" href="data:,">
@@ -17,8 +16,8 @@
 <body>
   <header>
     <nav class="nav collapsible">
-      <a class="nav__brand" href="/"><img src="images/logog.png" alt=""></a>
-      <img src="images/menu2.svg" alt="Menu" class="icon nav__toggler">
+      <a aria-label="Goshify" class="nav__brand" href="/"><img src="images/logog.png" alt=""></a>
+      <img src="images/menu2.svg" alt="Image of Menu" class="icon nav__toggler">
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="#">Hosting</a></li>
         <li class="nav__item"><a href="#">VPS</a></li>
@@ -48,9 +47,9 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
     </header>
     <div class="input-group">
-      <input type="text" class="input" placeholder="Enter domain name here...">
+      <input aria-label="Domain" type="text" class="input" placeholder="Enter domain name here...">
       <button class="btn btn--accent">
-        <img src="images/search.svg" alt="Search" class="icon">Search</button>
+        <img src="images/search.svg" alt="Image of Search" class="icon">Search</button>
     </div>
     <ul class="list block-domail__prices">
       <li><span class="badge badge--secondary">.com $9</span></li>
@@ -136,7 +135,7 @@
     <article class="grid grid--1x2 feature">
       <div data-aos="fade-right">
         <span class="icon-container">
-          <img src="/images/easym.png" class="icon" alt="Easy">
+          <img src="/images/easym.png" class="icon" alt="Image of Easy">
         </span>
         <h3 class="feature__heading">Super Easy to Use</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto a ex explicabo omnis, fugit quae placeat
@@ -160,7 +159,7 @@
           <!-- <svg class="icon icon--primary">
             <use href="/images/sprite.svg#computer"></use>
           </svg> -->
-          <img src="/images/computer.png" class="icon" alt="Computer">
+          <img src="/images/computer.png" class="icon" alt="Image of Computer">
         </span>
         <h3 class="feature__heading">Simply fast websites</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -176,7 +175,7 @@
           <!-- <svg class="icon icon--primary">
             <use href="/images/sprite.svg#settings"></use>
           </svg> -->
-          <img src="/images/settings.png" class="icon" alt="settings">
+          <img src="/images/settings.png" class="icon" alt="Image of Settings">
         </span>
         <h3 class="feature__heading">WordPress made easy</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -201,7 +200,7 @@
           <!-- <svg class="icon icon--primary">
             <use href="/images/sprite.svg#clock"></use>
           </svg> -->
-          <img src="/images/clock.png" class="icon" alt="Clock">
+          <img src="/images/clock.png" class="icon" alt="Image of Clock">
         </span>
         <h3 class="feature__heading">24/7 Expert Support</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -231,7 +230,7 @@
                 <!-- <svg class="icon icon--primary">
                   <use href="/images/sprite.svg#snap"></use>
                 </svg> -->
-                <img src="/images/snap.png" class="icon" alt="Snap">
+                <img src="/images/snap.png" class="icon" alt="Image of Snap">
               </div>
               <div class="media__body">
                 <h3 class="media__title">Easy Start & Managed Updates</h3>
@@ -247,7 +246,7 @@
                 <!-- <svg class="icon icon--primary">
                   <use href="/images/sprite.svg#growth"></use>
                 </svg> -->
-                <img src="/images/growth.png" class="icon" alt="Growth">
+                <img src="/images/growth.png" class="icon" alt="Image of Growth">
               </div>
               <div class="media__body">
                 <h3 class="media__title">Staging, Git & WP-CLI</h3>
@@ -263,7 +262,7 @@
                 <!-- <svg class="icon icon--primary">
                   <use href="/images/sprite.svg#wordpress"></use>
                 </svg> -->
-                <img src="/images/wordpress.png" class="icon" alt="Wordpress">
+                <img src="/images/wordpress.png" class="icon" alt="Image of Wordpress">
               </div>
               <div class="media__body">
                 <h3 class="media__title">Dynamic Caching & More</h3>
@@ -294,7 +293,7 @@
               <!-- <svg class="icon icon--white icon--small">
                 <use href="/images/sprite.svg#quotes"></use>
               </svg> -->
-              <img src="/images/quotes.png" class="icon icon--small" alt="Quotes">
+              <img src="/images/quotes.png" class="icon icon--small" alt="Image of Quotes">
             </span>
           </div>
           <blockquote class="quote">
@@ -309,7 +308,7 @@
                   <!-- <svg class="icon icon--primary quote__line">
                     <use href="/images/sprite.svg#line"></use>
                   </svg> -->
-                  <img src="/images/line.svg" class="icon quote__line" alt="Line">
+                  <img src="/images/line.svg" class="icon quote__line" alt="Image of Line">
                 </div>
                 <div class="media__body">
                   <h3 class="media__title quote__autor">John Smith</h3>
@@ -346,7 +345,7 @@
           <!-- <svg class="icon icon--white collapsible__chevron">
             <use href="/images/sprite.svg#chevron"></use>
           </svg> -->
-          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Chevron">
+          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Image of Chevron">
         </div>
         <div class="collapsible__content">
           <ul class="list">
@@ -364,7 +363,7 @@
           <!-- <svg class="icon icon--white collapsible__chevron">
             <use href="/images/sprite.svg#chevron"></use>
           </svg> -->
-          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Chevron">
+          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Image of Chevron">
         </div>
         <div class="collapsible__content">
           <ul class="list">
@@ -382,7 +381,7 @@
           <!-- <svg class="icon icon--white collapsible__chevron">
             <use href="/images/sprite.svg#chevron"></use>
           </svg> -->
-          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Chevron">
+          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Image of Chevron">
         </div>
         <div class="collapsible__content">
           <ul class="list">
@@ -401,7 +400,7 @@
           <!-- <svg class="icon icon--white collapsible__chevron">
             <use href="/images/sprite.svg#chevron"></use>
           </svg> -->
-          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Chevron">
+          <img src="/images/chevron.png" class="icon collapsible__chevron" alt="Image of Chevron">
         </div>
         <div class="collapsible__content">
           <ul class="list">
